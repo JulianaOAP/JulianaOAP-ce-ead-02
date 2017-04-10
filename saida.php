@@ -17,10 +17,10 @@
       $professor   = $_POST['professor'];
       $coordenador = $_POST['coordenador'];
       $curso       = $_POST['curso'];
-      $notaVa1      = (float)str_replace(',', '.', $_POST['notaVa1']); 
-      $notaVa2      = (float)str_replace(',', '.', $_POST['notaVa2']); 
-      $notaVa3      = (float)str_replace(',', '.', $_POST['notaVa3']);      
-      $notaTrab   = (float)str_replace(',', '.', $_POST['notaTrab']);  
+      $notaVa1      = $_POST['notaVa1']; 
+      $notaVa2      = $_POST['notaVa2']; 
+      $notaVa3      = $_POST['notaVa3'];      
+      $notaTrab   =  $_POST['notaTrab'];  
       $linkImg      = $_POST['linkImg'];
       $simNao          = '';
       $total            = $notaVa1 + $notaVa2 + $notaVa3 + $notaTrab; 
