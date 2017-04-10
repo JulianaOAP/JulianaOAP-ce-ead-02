@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>
+      Avaliação de Resultados
+    </title>
+  </head>
+  <body> 
+ <div id=alin_form>
+    <form method='POST' action='saida.php'>     
+      <h1 class='titulo'>
+        Avaliação de resultados
+      </h1>
+      
+      <p>
+        Nome do(a) aluno(a):
+        <input type='text' name='aluno'>        
+      </p>
+      
+      <p>
+        Nome da disciplina:
+        <input type='text' name='disciplina'>        
+      </p>      
+      
+      <p>
+        Nome do curso:
+        <input type='text' name='curso'>        
+      </p>   
+
+      <p>
+        <em>Link</em> para a logomarca da faculdade:
+        <input type='text' name='linkImg'>        
+      </p>      
+
+      <p>
+        Nota da VA1 (0-15):
+        <input type='number' name='notaVa1' step='any' min='0' max='15'>        
+      </p>  
+
+      <p>
+        Nota da VA2 (0-25):
+        <input type='number' name='notaVa2' step='any' min='0' max='25'>        
+      </p> 
+
+      <p>
+        Nota da VA3 (0-35):
+        <input type='number' name='notaVa3'step='any' min='0' max='35'>        
+      </p>       
+
+      <p>
+        Nota dos trabalhos (0-25):
+        <input type='number' name='notaTrab' step='any' min='0' max='25'>        
+      </p>             
+      
+      <p>
+        Nome do(a) professor(a):
+        <input type='text' name='professor'>        
+      </p>       
+
+      <p>
+        Nome do(a) coordenador(a):
+        <input type='text' name='coordenador'>        
+      </p>         
+      
+      <p>
+        <input type='submit' value='Gerar declaração'>      
+      </p>      
+   </form>
+   </div>
+  </body>
+</html>
