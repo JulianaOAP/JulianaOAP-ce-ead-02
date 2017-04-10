@@ -27,7 +27,9 @@
       $percentNotaVa1    = ($notaVa1 * 100) / 15;
       $percentNotaVa2    = ($notaVa2 * 100) / 25;
       $percentNotaVa3    = ($notaVa3 * 100) / 35;      
-      $percentNotaTrab = ($notaTrab * 100) / 25;      
+      $percentNotaTrab = ($notaTrab * 100) / 25;
+      $perimetro      = $_POST['lado']; 
+      $area      = $_POST['lado'];  
       
       if ($total >= 90) {
         $conceito = 'excelente';
@@ -135,6 +137,12 @@
     <p class='alinhamento'>
       _____________________________________<br />    
       <?php echo $coordenador; ?> - Coordenador(a)
-    </p>    
+    </p>   
+	  <?php
+        $perimetro = $perimetro*4;
+        $area= $area*$area; 
+     ?> 
+     <p> Perímetro: <?php echo $perimetro?> </p> 
+     <p> Area: <?php echo $area?> </p>
   </body>
 </html>
